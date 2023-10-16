@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Energia Elétrica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Energia Elétrica no Apartamento</h1>
+    </header>
+    <main>
+        <div class="apartment-layout">
+            <div class="room living-room" id="living-room">
+                <h2>Sala de Estar</h2>
+                <div class="circuit" id="circuit-lights">
+                    <p>Luzes</p>
+                    <button onclick="toggleCircuit('circuit-lights')">Ligar/Desligar</button>
+                </div>
+                <div class="circuit" id="circuit-outlets">
+                    <p>Tomadas</p>
+                    <button onclick="toggleCircuit('circuit-outlets')">Ligar/Desligar</button>
+                </div>
+            </div>
+            <div class="room kitchen" id="kitchen">
+                <h2>Cozinha</h2>
+                <div class="circuit" id="circuit-lights-kitchen">
+                    <p>Luzes</p>
+                    <button onclick="toggleCircuit('circuit-lights-kitchen')">Ligar/Desligar</button>
+                </div>
+                <div class="circuit" id="circuit-appliances">
+                    <p>Equipamentos</p>
+                    <button onclick="toggleCircuit('circuit-appliances')">Ligar/Desligar</button>
+                </div>
+            </div>
+            <div class="room bedroom" id="bedroom">
+                <h2>Quarto</h2>
+                <div class="circuit" id="circuit-lights-bedroom">
+                    <p>Luzes</p>
+                    <button onclick="toggleCircuit('circuit-lights-bedroom')">Ligar/Desligar</button>
+                </div>
+                <div class="circuit" id="circuit-outlets-bedroom">
+                    <p>Tomadas</p>
+                    <button onclick="toggleCircuit('circuit-outlets-bedroom')">Ligar/Desligar</button>
+                </div>
+            </div>
+            <div class="room bathroom" id="bathroom">
+                <h2>Banheiro</h2>
+                <div class="circuit" id="circuit-lights-bathroom">
+                    <p>Luzes</p>
+                    <button onclick="toggleCircuit('circuit-lights-bathroom')">Ligar/Desligar</button>
+                </div>
+            </div>
+            <div class="room dining-room" id="dining-room">
+                <h2>Sala de Jantar</h2>
+                <div class="circuit" id="circuit-lights-dining-room">
+                    <p>Luzes</p>
+                    <button onclick="toggleCircuit('circuit-lights-dining-room')">Ligar/Desligar</button>
+                </div>
+            </div>
+        </div>
+        <div class="electric-circuits">
+            <h2>Estado dos Circuitos Elétricos</h2>
+
+            <h3><p>Sala de estar:</p></h3>
+            <div  class="circuit-status" id="circuit-outlets-status">Ligado</div>
+            <h3><p>Cozinha:</p></h3>
+            <div class="circuit-status" id="circuit-appliances-status">Ligado</div>
+            <h3><p>Quarto:</p></h3>
+            <div class="circuit-status" id="circuit-outlets-bedroom-status">Ligado</div>
+            <h3><p>Banheiro:</p></h3>
+            <div class="circuit-status" id="circuit-lights-bathroom-status">Ligado</div>
+            <h3><p>Sala de Jantar:</p></h3>
+            <div class="circuit-status" id="circuit-lights-dining-room-status">Ligado</div>
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

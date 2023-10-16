@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.room {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.room h2 {
+    text-align: center;
+}
+
+.circuit {
+    position: absolute;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.circuit button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.circuit-status {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.living-room {
+    top: 241px;
+    left: 70px;
+}
+
+.kitchen {
+    top: 10px;
+    left: 20%;
+}
+
+.bedroom {
+    top: 0px;
+    left: 70px;
+}
+
+.bathroom {
+    left: 70px;
+}
+
+.dining-room {
+    top: 0px;
+    left: 70px;
+}
+
+
